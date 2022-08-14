@@ -1,7 +1,5 @@
 
-provider "aws" {
- profile  = "Production1"
-}
+provider "aws" {}
 
 resource "aws_dynamodb_table" "state_locking" {
   hash_key = "LockID"
